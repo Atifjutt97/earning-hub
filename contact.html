@@ -1,36 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contact Earning Hub</title><meta name="description" content="Contact Earning Hub for questions, suggestions, feedback or website-related issues."><style>
 
-<title>Contact - Earning Hub</title>
-
-<style>
 body{
 font-family:Arial,sans-serif;
 background:#f0f8ff;
-padding:20px;
+color:#222;
+line-height:1.6;
+margin:0;
 }
 
-h1{
-color:#222;
+header{
+background:#0d6efd;
+color:white;
+padding:30px 20px;
 text-align:center;
 }
 
-form{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
+header h1{
+color:white;
 }
 
-input, textarea{
+main{
+max-width:700px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+label{
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+
+input,textarea{
 width:100%;
 padding:12px;
-margin-top:10px;
+margin-top:7px;
 border-radius:8px;
 border:1px solid #ccc;
+font-size:16px;
+box-sizing:border-box;
 }
 
 button{
@@ -39,33 +56,65 @@ color:white;
 padding:12px 30px;
 border:none;
 border-radius:10px;
-margin-top:15px;
+margin-top:18px;
 font-size:16px;
+cursor:pointer;
 }
-</style>
 
-</head>
+button:hover{
+background:#0d6efd;
+}
 
-<body>
+.back{
+display:inline-block;
+background:#222;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+text-decoration:none;
+margin-top:20px;
+}
 
-<h1>📩 Contact Us</h1>
+.note{
+background:#fff8e1;
+padding:15px;
+border-radius:10px;
+margin-bottom:20px;
+}
 
-<form action="https://formspree.io/f/mvzedzny"
-method="POST">
+</style></head><body><header><h1>📩 Contact Us</h1><p>We would like to hear from you</p></header><main><div class="card"><div class="note"><strong>Before contacting us:</strong>
+Please provide clear information about your question or suggestion. Do not include passwords, payment information or other sensitive personal information in your message.
 
-<input type="text" name="name" placeholder="Your Name" required>
+</div><h2>Send Us a Message</h2><p>
+Use the form below for questions, suggestions, feedback or to report an issue with the website.
+</p><form action="https://formspree.io/f/mvzedzny" method="POST"><label for="name">Name</label>
 
-<input type="email" name="email" placeholder="Your Email" required>
+<input
+type="text"
+id="name"
+name="name"
+placeholder="Your Name"
+required>
 
-<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+<label for="email">Email</label>
 
-<button type="submit">Send Message</button>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="Your Email"
+required>
 
-</form>
+<label for="message">Message</label>
 
-<a href="index.html">
-<button>⬅ Back to Home</button>
-</a>
+<textarea
+id="message"
+name="message"
+rows="6"
+placeholder="Write your message here..."
+required></textarea><button type="submit">Send Message</button>
 
-</body>
+</form><a class="back" href="index.html">⬅ Back to Home</a>
+
+</div></main></body>
 </html>
